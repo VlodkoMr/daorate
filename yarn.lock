@@ -310,6 +310,92 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dao-rate/hardhat@workspace:packages/hardhat":
+  version: 0.0.0-use.local
+  resolution: "@dao-rate/hardhat@workspace:packages/hardhat"
+  dependencies:
+    "@ethersproject/abi": ^5.7.0
+    "@ethersproject/providers": ^5.7.1
+    "@matterlabs/hardhat-zksync-solc": ^0.3.17
+    "@matterlabs/hardhat-zksync-verify": ^0.1.8
+    "@nomicfoundation/hardhat-chai-matchers": ^1.0.3
+    "@nomicfoundation/hardhat-network-helpers": ^1.0.6
+    "@nomicfoundation/hardhat-toolbox": ^2.0.0
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13"
+    "@nomiclabs/hardhat-etherscan": ^3.1.0
+    "@openzeppelin/contracts": ^4.8.1
+    "@typechain/ethers-v5": ^10.1.0
+    "@typechain/hardhat": ^6.1.3
+    "@types/eslint": ^8
+    "@types/mocha": ^9.1.1
+    "@types/prettier": ^2
+    "@types/qrcode": ^1
+    "@typescript-eslint/eslint-plugin": latest
+    "@typescript-eslint/parser": latest
+    chai: ^4.3.6
+    dotenv: ^16.0.3
+    envfile: ^6.18.0
+    eslint: ^8.26.0
+    eslint-config-prettier: ^8.5.0
+    eslint-plugin-prettier: ^4.2.1
+    ethers: ^5.7.1
+    hardhat: ^2.17.3
+    hardhat-deploy: ^0.11.26
+    hardhat-gas-reporter: ^1.0.9
+    prettier: ^2.8.4
+    qrcode: ^1.5.1
+    solidity-coverage: ^0.8.2
+    ts-node: ^10.9.1
+    typechain: ^8.1.0
+    typescript: ^5.1.6
+  languageName: unknown
+  linkType: soft
+
+"@dao-rate/nextjs@workspace:packages/nextjs":
+  version: 0.0.0-use.local
+  resolution: "@dao-rate/nextjs@workspace:packages/nextjs"
+  dependencies:
+    "@ethersproject/providers": ^5.7.2
+    "@heroicons/react": ^2.0.11
+    "@prisma/client": 5.6.0
+    "@rainbow-me/rainbowkit": 1.1.2
+    "@trivago/prettier-plugin-sort-imports": ^4.1.1
+    "@types/node": ^17.0.35
+    "@types/react": ^18.0.9
+    "@types/react-copy-to-clipboard": ^5.0.4
+    "@typescript-eslint/eslint-plugin": ^5.39.0
+    "@uniswap/sdk-core": ^4.0.1
+    "@uniswap/v2-sdk": ^3.0.1
+    autoprefixer: ^10.4.12
+    blo: ^1.0.1
+    daisyui: ^3.5.1
+    eslint: ^8.15.0
+    eslint-config-next: ^13.1.6
+    eslint-config-prettier: ^8.5.0
+    eslint-plugin-prettier: ^4.2.1
+    graphql-request: ^6.1.0
+    next: ^13.1.6
+    nextjs-progressbar: ^0.0.16
+    postcss: ^8.4.16
+    prettier: ^2.8.4
+    prisma: ^5.6.0
+    qrcode.react: ^3.1.0
+    react: ^18.2.0
+    react-copy-to-clipboard: ^5.1.0
+    react-dom: ^18.2.0
+    react-hot-toast: ^2.4.0
+    tailwindcss: ^3.3.3
+    type-fest: ^4.6.0
+    typescript: ^5.1.6
+    use-debounce: ^8.0.4
+    usehooks-ts: ^2.7.2
+    vercel: ^28.15.1
+    viem: ^1.16.6
+    wagmi: 1.4.4
+    zustand: ^4.1.2
+  languageName: unknown
+  linkType: soft
+
 "@edge-runtime/format@npm:1.1.0":
   version: 1.1.0
   resolution: "@edge-runtime/format@npm:1.1.0"
@@ -808,6 +894,15 @@ __metadata:
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
   checksum: 4059f790e2d07bf3c3ff3e0fec0daa8144fe35c1f6e0111c9921bd32106adaa97a4ab096ad7dab1e28ee6a9060083c4d1a4ada42a7f5f3f7a96b8812e2b757c1
+  languageName: node
+  linkType: hard
+
+"@graphql-typed-document-node/core@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@graphql-typed-document-node/core@npm:3.2.0"
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+  checksum: fa44443accd28c8cf4cb96aaaf39d144a22e8b091b13366843f4e97d19c7bfeaf609ce3c7603a4aeffe385081eaf8ea245d078633a7324c11c5ec4b2011bb76d
   languageName: node
   linkType: hard
 
@@ -1715,6 +1810,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/client@npm:5.6.0":
+  version: 5.6.0
+  resolution: "@prisma/client@npm:5.6.0"
+  dependencies:
+    "@prisma/engines-version": 5.6.0-32.e95e739751f42d8ca026f6b910f5a2dc5adeaeee
+  peerDependencies:
+    prisma: "*"
+  peerDependenciesMeta:
+    prisma:
+      optional: true
+  checksum: 51abfba1c066ff6a79d5c6aad5eed6bdde6fbafa5a1d6e17f3aa2b0f8ed55541079b2526bc0372158953d1146c8dd9c6fbcd137cf7fb2ace1022b02cc55675ab
+  languageName: node
+  linkType: hard
+
+"@prisma/engines-version@npm:5.6.0-32.e95e739751f42d8ca026f6b910f5a2dc5adeaeee":
+  version: 5.6.0-32.e95e739751f42d8ca026f6b910f5a2dc5adeaeee
+  resolution: "@prisma/engines-version@npm:5.6.0-32.e95e739751f42d8ca026f6b910f5a2dc5adeaeee"
+  checksum: 197f63539999e50e66577d70b3167d9bdb5810a66fde60ee3f69cd58cf47516a43221092ce82303ad3d9dde2f2700c7f76b4383093d33793fbfbb1b0a4f144ee
+  languageName: node
+  linkType: hard
+
+"@prisma/engines@npm:5.6.0":
+  version: 5.6.0
+  resolution: "@prisma/engines@npm:5.6.0"
+  checksum: 52688e2f59715479f8d531b1ce755578b069f05b0e3735a564f487a2cb8fa19b5f10a21b22e3fbba206190ece0f5a033952b3c78da6545ee798a186daa5b2e73
+  languageName: node
+  linkType: hard
+
 "@rainbow-me/rainbowkit@npm:1.1.2":
   version: 1.1.2
   resolution: "@rainbow-me/rainbowkit@npm:1.1.2"
@@ -1857,89 +1980,6 @@ __metadata:
   checksum: c5bd6f1328fdbeae2dcdd891825b1610225310e5e62a4942714db51066866e4f7bef242c7b06a1b9dcc8043a4a13412cf5c5df76d3b10aa9e36b82e9b6e3eeaa
   languageName: node
   linkType: hard
-
-"@se-2/hardhat@workspace:packages/hardhat":
-  version: 0.0.0-use.local
-  resolution: "@se-2/hardhat@workspace:packages/hardhat"
-  dependencies:
-    "@ethersproject/abi": ^5.7.0
-    "@ethersproject/providers": ^5.7.1
-    "@matterlabs/hardhat-zksync-solc": ^0.3.17
-    "@matterlabs/hardhat-zksync-verify": ^0.1.8
-    "@nomicfoundation/hardhat-chai-matchers": ^1.0.3
-    "@nomicfoundation/hardhat-network-helpers": ^1.0.6
-    "@nomicfoundation/hardhat-toolbox": ^2.0.0
-    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13"
-    "@nomiclabs/hardhat-etherscan": ^3.1.0
-    "@openzeppelin/contracts": ^4.8.1
-    "@typechain/ethers-v5": ^10.1.0
-    "@typechain/hardhat": ^6.1.3
-    "@types/eslint": ^8
-    "@types/mocha": ^9.1.1
-    "@types/prettier": ^2
-    "@types/qrcode": ^1
-    "@typescript-eslint/eslint-plugin": latest
-    "@typescript-eslint/parser": latest
-    chai: ^4.3.6
-    dotenv: ^16.0.3
-    envfile: ^6.18.0
-    eslint: ^8.26.0
-    eslint-config-prettier: ^8.5.0
-    eslint-plugin-prettier: ^4.2.1
-    ethers: ^5.7.1
-    hardhat: ^2.17.3
-    hardhat-deploy: ^0.11.26
-    hardhat-gas-reporter: ^1.0.9
-    prettier: ^2.8.4
-    qrcode: ^1.5.1
-    solidity-coverage: ^0.8.2
-    ts-node: ^10.9.1
-    typechain: ^8.1.0
-    typescript: ^5.1.6
-  languageName: unknown
-  linkType: soft
-
-"@se-2/nextjs@workspace:packages/nextjs":
-  version: 0.0.0-use.local
-  resolution: "@se-2/nextjs@workspace:packages/nextjs"
-  dependencies:
-    "@ethersproject/providers": ^5.7.2
-    "@heroicons/react": ^2.0.11
-    "@rainbow-me/rainbowkit": 1.1.2
-    "@trivago/prettier-plugin-sort-imports": ^4.1.1
-    "@types/node": ^17.0.35
-    "@types/react": ^18.0.9
-    "@types/react-copy-to-clipboard": ^5.0.4
-    "@typescript-eslint/eslint-plugin": ^5.39.0
-    "@uniswap/sdk-core": ^4.0.1
-    "@uniswap/v2-sdk": ^3.0.1
-    autoprefixer: ^10.4.12
-    blo: ^1.0.1
-    daisyui: ^3.5.1
-    eslint: ^8.15.0
-    eslint-config-next: ^13.1.6
-    eslint-config-prettier: ^8.5.0
-    eslint-plugin-prettier: ^4.2.1
-    next: ^13.1.6
-    nextjs-progressbar: ^0.0.16
-    postcss: ^8.4.16
-    prettier: ^2.8.4
-    qrcode.react: ^3.1.0
-    react: ^18.2.0
-    react-copy-to-clipboard: ^5.1.0
-    react-dom: ^18.2.0
-    react-hot-toast: ^2.4.0
-    tailwindcss: ^3.3.3
-    type-fest: ^4.6.0
-    typescript: ^5.1.6
-    use-debounce: ^8.0.4
-    usehooks-ts: ^2.7.2
-    vercel: ^28.15.1
-    viem: ^1.16.6
-    wagmi: 1.4.4
-    zustand: ^4.1.2
-  languageName: unknown
-  linkType: soft
 
 "@sentry/core@npm:5.30.0":
   version: 5.30.0
@@ -5530,6 +5570,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dao-rate@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "dao-rate@workspace:."
+  dependencies:
+    husky: ^8.0.1
+    lint-staged: ^13.0.3
+  languageName: unknown
+  linkType: soft
+
 "dashdash@npm:^1.12.0":
   version: 1.14.1
   resolution: "dashdash@npm:1.14.1"
@@ -7914,6 +7963,18 @@ __metadata:
   version: 1.0.4
   resolution: "grapheme-splitter@npm:1.0.4"
   checksum: 0c22ec54dee1b05cd480f78cf14f732cb5b108edc073572c4ec205df4cd63f30f8db8025afc5debc8835a8ddeacf648a1c7992fe3dcd6ad38f9a476d84906620
+  languageName: node
+  linkType: hard
+
+"graphql-request@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "graphql-request@npm:6.1.0"
+  dependencies:
+    "@graphql-typed-document-node/core": ^3.2.0
+    cross-fetch: ^3.1.5
+  peerDependencies:
+    graphql: 14 - 16
+  checksum: 6d62630a0169574442320651c1f7626c0c602025c3c46b19e09417c9579bb209306ee63de9793a03be2e1701bb7f13971f8545d99bc6573e340f823af0ad35b2
   languageName: node
   linkType: hard
 
@@ -11076,6 +11137,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prisma@npm:^5.6.0":
+  version: 5.6.0
+  resolution: "prisma@npm:5.6.0"
+  dependencies:
+    "@prisma/engines": 5.6.0
+  bin:
+    prisma: build/index.js
+  checksum: 77b80b89a771c6c218172cfc5b692e65755ba76ec5b6487ea3ac5b5fa05aea47c48a11cb9449517c4bc4770c3737d02fe3db576bd54c6e32fcf39f08607b546e
+  languageName: node
+  linkType: hard
+
 "process-nextick-args@npm:~2.0.0":
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
@@ -12010,15 +12082,6 @@ __metadata:
   checksum: b7c7d1a68d6ca946f2fbb0778e0c4ec63c65501b54023b2af7d7e9f48fdb6c6580d6f7675cd53bda5944c5ebc057560d5a6365079752546865defb3b79dea454
   languageName: node
   linkType: hard
-
-"se-2@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "se-2@workspace:."
-  dependencies:
-    husky: ^8.0.1
-    lint-staged: ^13.0.3
-  languageName: unknown
-  linkType: soft
 
 "secp256k1@npm:^4.0.1":
   version: 4.0.3
@@ -13634,9 +13697,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"usehooks-ts@patch:usehooks-ts@npm:^2.7.2#./.yarn/patches/usehooks-ts-npm-2.7.2-fceffe0e43.patch::locator=se-2%40workspace%3A.":
+"usehooks-ts@patch:usehooks-ts@npm:^2.7.2#./.yarn/patches/usehooks-ts-npm-2.7.2-fceffe0e43.patch::locator=dao-rate%40workspace%3A.":
   version: 2.9.1
-  resolution: "usehooks-ts@patch:usehooks-ts@npm%3A2.9.1#./.yarn/patches/usehooks-ts-npm-2.7.2-fceffe0e43.patch::version=2.9.1&hash=68bde7&locator=se-2%40workspace%3A."
+  resolution: "usehooks-ts@patch:usehooks-ts@npm%3A2.9.1#./.yarn/patches/usehooks-ts-npm-2.7.2-fceffe0e43.patch::version=2.9.1&hash=68bde7&locator=dao-rate%40workspace%3A."
   peerDependencies:
     react: ^16.8.0  || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0  || ^17.0.0 || ^18.0.0

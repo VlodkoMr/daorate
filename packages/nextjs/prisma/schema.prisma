@@ -1,0 +1,68 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum CampaignType {
+  NFT
+  FT
+}
+
+model Campaigns {
+  id                   Int                           @id @default(autoincrement())
+  name                 String
+  ownerAddress         String
+  dateFrom             DateTime
+  dateTo               DateTime
+  campaignType         CampaignType
+  contracts            Json
+  createdAt            DateTime                      @default(now())
+  updatedAt            DateTime                      @updatedAt
+  WalletRatings        WalletRatings[]
+  CampaignWalletStats  CampaignWalletBalanceStats[]
+  CampaignWalletsTotal CampaignWalletBalanceTotals[]
+}
+
+model CampaignWalletBalanceStats {
+  id              Int       @id @default(autoincrement())
+  date            DateTime
+  network         String
+  campaignId      Int
+  contractAddress String
+  walletAddress   String
+  balance         Float
+  campaign        Campaigns @relation(fields: [campaignId], onDelete: Cascade, references: [id])
+
+  @@index([date, network, contractAddress])
+}
+
+model CampaignWalletBalanceTotals {
+  id              Int       @id @default(autoincrement())
+  date            DateTime
+  network         String
+  campaignId      Int
+  contractAddress String
+  total           Float
+  campaign        Campaigns @relation(fields: [campaignId], onDelete: Cascade, references: [id])
+
+  @@index([date, network, contractAddress])
+}
+
+model WalletRatings {
+  id            Int       @id @default(autoincrement())
+  walletAddress String
+  campaignId    Int
+  rating        Float
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  campaign      Campaigns @relation(fields: [campaignId], onDelete: Cascade, references: [id])
+
+  @@index([walletAddress, campaignId])
+}
